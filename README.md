@@ -3,6 +3,33 @@
 
 This C++ program  inherits from a `Point3D` class, and a `Plane` class to implements a `Vector3D` class. The `Vector3D` class provides various methods for vector operations using computational geometry, while the `Plane` class offers methods for plane operations.
 
+## Getting Started
+
+1. **Clone the Repository:**
+
+    ```bash
+    git clone https://github.com/abhicctech1003/Vector_Operations.git
+    ```
+
+2. **Build the Project:**
+
+    Open the project in your preferred C++ IDE or build using the command line.
+
+3. **Run the Application:**
+
+    Execute the built binary to run the application.
+
+## Folder Structure
+The project is organized into the following folders:
+
+- **headers**: Contains header files for point, reader, shape, triangle, triangulation, writer class.
+
+- **output**: Output contains execuatble.
+ 
+- **src**: Contains implementation files corresponding to each header file.
+
+- **main.cpp**: Main source file where the program execution starts.
+
 ## Vector3D Class
 
 ### Methods:
