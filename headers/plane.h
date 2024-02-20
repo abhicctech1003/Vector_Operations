@@ -1,26 +1,21 @@
-#include "point3D.h"
-class plane 
+#pragma once
+#include "vector3D.h"
+ 
+namespace Geometry
 {
+    class Plane
+    {
     public:
-    plane();
-    ~plane();
-
-    plane(point3D point , point3D v1 ,point3D v2);
-
-    void sPoint(point3D mPoint);
-    void sVector1(point3D v1);
-    void sVectoV2(point3D v2);
-
-    point3D gPoint();
-    point3D gVector1();
-    point3D gVector2();
-
+        Plane();
+        Plane(const Geometry::GeomVector &normal, const Geometry::Point3D &pointOnPlane);
+ 
+        Geometry::GeomVector normal() const;
+        Point3D pointOnPlane() const;
+ 
+        ~Plane();
+ 
     private:
-    point3D mPoint;
-    point3D mV1;
-    point3D mV2;
-
-
-
-    
-};
+        Geometry::GeomVector mNormal;
+        Point3D mPointOnPlane;
+    };
+}
